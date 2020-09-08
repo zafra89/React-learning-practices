@@ -6,7 +6,7 @@ export default class ListComponent extends Component {
     let items = [];
 
     for (let i = 0; i < 5; i++) {
-      items.push(<li key={i}>Item {i + 1} </li>)
+      items.push(<li key={i}>Item no.{i + 1} </li>)
     }
 
     return (
