@@ -2,17 +2,18 @@ import React from 'react';
 import './GalleryItem.scss'
 
 export default function GalleryItem(props) {
+  const catsInfo = props.catsInfo;
 
   return (
-    <div className="col-lg-4 col-md-6 col-sm-12">
+    <div className="col-lg-4 col-md-6 col-sm-12 item">
       <figure>
-        <img src={props.listInfo.imgUrl} alt="" />
+        <img src={catsInfo.imgUrl} alt=""/>
         <figcaption>
-          <h2>{props.listInfo.title}</h2>
-          <h4>{props.listInfo.description}</h4>
+          <h2>{catsInfo.title}</h2>
+          <h5>{catsInfo.description}</h5>
         </figcaption>
       </figure>
-      {/*<button onClick={() => {props.fnRemoveCat(props.index)}}>X</button>*/}
+      <button onClick={() => {props.fnRemoveCat(props.index)}}>X</button>
     </div>
   )
 }

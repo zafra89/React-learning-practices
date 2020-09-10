@@ -1,10 +1,10 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorldComponent/HelloWorld.jsx';
-import ListComponent from './components/ListItems/ListComponent.jsx';
+import HelloWorld from './ClassComponents/HelloWorldComponent/HelloWorld.jsx';
+import ListComponent from './ClassComponents/ListItems/ListComponent.jsx';
 import './App.scss';
-import CountComponent from './components/Count/CountComponent.jsx';
-import UserComponent from './components/Usuario/UserComponent.jsx';
-import UserListComponent from './components/ListaUsuarios/UserListComponent.jsx';
+import CountComponent from './ClassComponents/Count/CountComponent.jsx';
+import UserComponent from './ClassComponents/Usuario/UserComponent.jsx';
+import UserListComponent from './ClassComponents/ListaUsuarios/UserListComponent.jsx';
 import CounterFuncComp from './FunctionalComponents/CounterFuncComp/CounterFuncComp.jsx';
 import ListFuncComp from './FunctionalComponents/ListFuncComp/ListFuncComp.jsx';
 import GalleryList from './FunctionalComponents/GalleryList/GalleryList.jsx';

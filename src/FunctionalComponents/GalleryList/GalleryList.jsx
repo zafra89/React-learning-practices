@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './GalleryList.scss'
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 export default function GalleryList() {
 
-  const listInfo = [
+  const [catsArray, setCatsArray] = useState([
     {
       title: "Gato 1",
-      description: "Amable y jueguetón",
+      description: "Amable y juguetón",
       imgUrl: 'https://i.pinimg.com/474x/45/eb/59/45eb598fca8ddf285af8870bd49e2355.jpg'
     },
     {
@@ -35,18 +35,19 @@ export default function GalleryList() {
       description: "Tom",
       imgUrl: 'https://magedalqerbi.cachefly.net/p/Tom_and_Jerry/0.webp'
     }
-  ]
+  ])
 
-  /*removeCat = (i) => {
-    const cats = [...listInfo];
+  const removeCat = (i) => {
+    const cats = [...catsArray];
     cats.splice(i, 1);
-    listInfo({cats});
-  }*/
+    setCatsArray(cats);
+  }
 
   return (
     <div className="container">
+      <h1>Lista de gatos altamente influyentes:</h1>
       <div className="row">
-        {listInfo.map((item, i) => <GalleryItem listInfo={item} index={i} /*fnRemoveCat={removeCat}*//>)}
+        {catsArray.map((catItem, i) => <GalleryItem catsInfo={catItem} index={i} key={i} fnRemoveCat={removeCat}/>)}
       </div>
     </div>
   )

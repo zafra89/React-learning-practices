@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
+import AppRouting from './AppRouting';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/*<App />*/}
+    <AppRouting/>
   </React.StrictMode>,
   document.getElementById('root')
 );
