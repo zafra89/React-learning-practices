@@ -27,8 +27,8 @@ export default function GalleryList() {
     },
     {
       title: "Gato 5",
-      description: "No es un gato pero está gordo",
-      imgUrl: 'https://lh3.googleusercontent.com/proxy/cFLZiQTs97aiiFT2d6I8T192jEou98_9s0oClUcHCRH8lcdPSqn7CLLIhd9IGFABxWohULzYB7pgJOigwBxHf0-YIByOkqFZeBjXUFHbT70fTtjNa3j2IlaTI9VxkG0X'
+      description: "Big Chungus no es un gato, pero está gordo",
+      imgUrl: 'https://i.imgflip.com/2pzf5a.png'
     },
     {
       title: "Gato 6",

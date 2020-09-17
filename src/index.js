@@ -7,8 +7,8 @@ import AppRouting from './AppRouting';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*<App />*/}
-    <AppRouting/>
+      <App/>
+      {/*<AppRouting/>*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
